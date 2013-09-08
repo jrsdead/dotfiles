@@ -13,7 +13,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # ----------------------------------------------------------
 export OSTYPE=`uname -s | sed -e 's/  */-/g;y/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/'`
 GITHUB_USER="jrsdead"
-DOTFILES_DIRECTORY="${HOME}/.dotfiles"
+DOTFILES_DIRECTORY="${HOME}/dotfiles"
 DOTFILES_TARBALL_PATH="https://github.com/${GITHUB_USER}=/dotfiles/tarball/master"
 DOTFILES_GIT_REMOTE="https://github.com/${GITHUB_USER}=/dotfiles"
 
