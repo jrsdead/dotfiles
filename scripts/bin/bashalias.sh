@@ -16,6 +16,7 @@ alias rsync_mirror='rsync -avh --numeric-ids'
 alias systail='tail -f /var/log/system.log'
 alias top='top -o cpu'
 alias untar='tar xfvz'
+alias lessc='/usr/local/share/npm/bin/lessc'
 
 downforme () 
 { 
