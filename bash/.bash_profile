@@ -6,7 +6,7 @@ export PLATFORM="$MACHINE-$OS-$OSVERSION"
 # Note, default OS is assumed to be OSX
 
 if [ -d ~/bin ]; then
-	export PATH=$(brew --prefix php55)/bin:~/bin:/usr/local/sbin:$PATH  # add your bin folder to the path, if you have it.  It's a good place to add all your scripts
+	export PATH=$(brew --prefix php55)/bin:~/bin:/usr/local/bin:/usr/local/sbin:$PATH  # add your bin folder to the path, if you have it.  It's a good place to add all your scripts
 fi
 
 
