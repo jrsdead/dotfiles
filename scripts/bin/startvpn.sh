@@ -43,6 +43,9 @@ tell application "Tunnelblick"
 end tell
 EOF
 
+echo "Your IP is now "
+lynx -dump -hiddenlinks=ignore -nolist http://checkip.dyndns.org:8245/ | awk '{ print $4 }' | sed '/^$/d; s/^[ ]*//g; s/[ ]*$//g'
+
 if ask "Start Apps?" Y; then
 	if ask "Start General Apps?" Y; then
 		if ask "Start Textual IRC Client?" Y; then
