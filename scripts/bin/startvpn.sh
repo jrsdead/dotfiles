@@ -50,7 +50,7 @@ if ask "Start Apps?" Y; then
 		if ask "Start Textual IRC Client?" Y; then
 			echo "starting Textual"
 			/usr/bin/osascript <<-ENDRUNTEXTUAL
-			tell application "Textual"
+			tell application "Textual 5"
 			        activate
 			end tell
 			tell application "Terminal"
